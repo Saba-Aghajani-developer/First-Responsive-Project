@@ -1,0 +1,259 @@
+/* mobile  */
+@media screen and (max-width:768px) {
+
+    // nav 
+    nav>header {
+        background-color: aliceblue;
+        justify-content: space-evenly;
+
+        >.logo {
+            font-size: 20px;
+            width: 40%;
+            color: black;
+            margin-left: 30px;
+        }
+
+        >.mobile-menu {
+            width: 40%;
+
+            >span {
+                color: black;
+            }
+
+            &::before,
+            &::after {
+                width: 30px;
+                background-color: black;
+            }
+        }
+
+    }
+
+    nav>header>ul {
+        width: 20%;
+
+        >li {
+            display: none;
+        }
+    }
+
+    nav>section>.animationBox>.up>h2 {
+        font-size: 70px;
+        top: 10%;
+    }
+
+    nav>section>.animationBox>.up>.sun {
+        width: 260px;
+        height: 260px;
+    }
+
+    nav>section>.animationBox>.up>img {
+        &:nth-of-type(1) {
+            width: 150px;
+            left: 0;
+            top: 5%;
+            z-index: 20;
+        }
+
+        &:nth-of-type(2) {
+            width: 150px;
+            right: 0;
+            top: 30%;
+        }
+    }
+
+    nav>section>.animationBox>.down>p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    nav>section>.animationBox>.down>img {
+        &:nth-of-type(1) {
+            height: 400px;
+            left: -5%;
+            top: 0;
+        }
+
+        &:nth-of-type(2) {
+            width: 250px;
+            right: 0;
+            top: 20%;
+        }
+
+        &:nth-of-type(3) {
+            display: none;
+        }
+    }
+
+    // second part 
+    .textBox>.textChild {
+        width: 4000%;
+    }
+
+    .textBox>.imgChild {
+        flex-wrap: wrap;
+
+        >img {
+            width: 60%;
+        }
+    }
+
+    // third part 
+    main {
+        height: 300vh;
+
+        >section {
+            flex-wrap: wrap;
+
+            &:last-of-type {
+                >.right {
+                    justify-content: end;
+                }
+
+                >.left {
+                    justify-content: start;
+
+                    >img {
+                        margin-left: 0;
+                    }
+                }
+
+                >img {
+                    bottom: 30%;
+                }
+            }
+
+            >.left {
+                width: 80%;
+                justify-content: center;
+
+                >img {
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+
+            >.right {
+                width: 80%;
+                justify-content: start;
+
+                >p {
+                    width: 90%;
+                    font-size: 40px;
+                    margin-left: 0;
+                }
+            }
+
+            >img {
+                bottom: 70%;
+                transform: translateY(50%);
+            }
+        }
+    }
+
+    @keyframes move {
+        from {
+            transform: translateY(50%);
+        }
+
+        to {
+            transform: translateY(48%);
+        }
+    }
+
+    // the fourth part 
+    .charector {
+        background-image: none;
+        height: 402vh;
+
+        >h2 {
+            padding: 40px 0;
+        }
+
+        >section {
+            width: 85%;
+            height: 95%;
+
+            >figure {
+                width: 70%;
+                height: 10%;
+
+                >img {
+                    top: 20px;
+                    width: 45%;
+                }
+
+                >figcaption {
+                    font-size: 20px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    //the fifth part 
+    .gallery {
+        height: 300vh;
+        background-image: url(img/2.jpg);
+
+        >section {
+            height: 100%;
+            padding-top: 50px;
+            align-content: center;
+
+            >figure {
+                width: 100%;
+                height: 13%;
+
+                >img {
+                    top: 0;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, 50%);
+                }
+
+                >div:first-of-type {
+                    top: 75%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                >div:last-of-type {
+                    transform: translate(-50%, -55%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    // footer 
+    footer {
+        >div>h3 {
+            font-size: 30px;
+        }
+    }
+
+}
+
+/* tablet  */
+@media screen and (min-width:768px) {
+
+    // the fourth part 
+    .charector {
+        >section {
+            >figure {
+                >figcaption {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* desktop */
+@media screen and (min-width:992px) {}
+
+/* big device */
+@media screen and (min-width:1200px) {}
